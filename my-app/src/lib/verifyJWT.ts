@@ -3,8 +3,6 @@ import { cookies } from 'next/headers'
 import { jwtVerify } from "jose";
 
 
-// async function verifyJWT() {
-
 export const verifyJWT = async () => {
 
     try {

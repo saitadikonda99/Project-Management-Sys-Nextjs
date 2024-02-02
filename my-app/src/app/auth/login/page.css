@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.Loader {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.LoginComponent {
+    width: 100%;
+}
+
+.LoginComponent-in {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LoginComponent-in-in {
+    width: 60%;
+    border-radius: 20px;
+    border: .1px solid rgb(230, 230, 230);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.Login-in-one {
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+}
+
+.Login-one {
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.Login-one-in {
+    padding: 1rem;
+    width: 100%;
+}
+
+.Login-one-one h1{
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.Login-one-one p {
+    color: gray;
+}
+
+.Login-one-two {
+    width: 100%;
+}
+
+.Login-one-two-in {
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.Login-input-one {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.Login-input-one input {
+    width: 90%;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: .1px solid rgb(230, 230, 230);
+}
+
+.Login-input-twp {
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.Login-input-two input {
+    width: 90%;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: .1px solid rgb(230, 230, 230);
+}
+
+.Login-input-three {
+    width: 100%;
+    padding: 1rem 0;    
+}
+
+.Login-input-three button {
+    width: 90%;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: white;
+}
+
+.Login-one-two-in-in {
+    width: 100%;
+}
+
+.Login-one-two-in-in-one {
+    width: 100%;
+}
+
+.Login-cr-one {
+    text-align: center;
+    padding: 0rem 1rem;
+    width: 90%;
+}
+
+.Login-cr-two {
+    width: 100%;
+    padding: 1rem 0;  
+}
+
+.Login-cr-two button {
+    width: 90%;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: white;
+}
+
+
+.Login-two {
+    width: 50%;
+    height: 60vh;
+    border-radius: 10px;
+    background-color: blue;
+}
+
+.Login-two img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}

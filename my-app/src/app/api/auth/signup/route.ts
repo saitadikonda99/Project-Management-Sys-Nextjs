@@ -16,8 +16,6 @@ export const POST = async (req:NextRequest, res:NextResponse): Promise<NextRespo
 
     const { firstName, lastName, username, email, branch, password, phone, address, gender, residence, profile_pic } = await req.json();
 
-
-
     try {
 
         const userRegex = /^[0-9]{10}$/;

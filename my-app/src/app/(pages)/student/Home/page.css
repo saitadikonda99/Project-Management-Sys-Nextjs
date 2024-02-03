@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.StudentComponent {
+    width: 100%;
+}
+
+.StudentComponent-in {
+    width: 100%;
+}
+
+.StudentComponent-in-in {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Student-sidebar {
+    width: 20%;
+}
+
+.Student-sidebar-in {
+    width: 100%;
+}
+
+.StudentHome {
+    width: 80%;
+    height: 100vh;
+    padding: 1rem;
+}
+
+.StudentHome-in {
+    width: 100%;
+}

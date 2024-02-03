@@ -8,7 +8,6 @@ import { verifyJWT } from './lib/verifyJWT'
  
 export async function middleware(request: NextRequest) {
 
-
     const path = request.nextUrl.pathname
 
     const isPublic = path === '/auth/login' || path === '/auth/register' || path === '/'
@@ -25,6 +24,10 @@ export async function middleware(request: NextRequest) {
 
     const isValid = await verifyJWT()
 
+    if(path === '/') {
+        return NextResponse.rewrite(new URL('/auth/login', request.url))
+    }
+    
     if(path === '/auth/login' && JWT) {
         if(roles.role === 'Admin') {
             return NextResponse.redirect(new URL('/Admin', request.url))
@@ -49,14 +52,15 @@ export async function middleware(request: NextRequest) {
 
     // allow only admin to access admin routes  
     if(path.startsWith('/Admin') && (isValid === false || roles?.role != 'Admin')) {
-        return NextResponse.redirect(new URL('/unAuth', request.url))
+        return NextResponse.redirect(new URL('/auth/login', request.url))
     } 
 
     
     // private routes for only students
-    if(path.startsWith('/Home') && (isValid === false || roles?.role != 'Student')) {
-        return NextResponse.redirect(new URL('/unAuth', request.url))
+    if(path.startsWith('/student') && (isValid === false || roles?.role != 'Student')) {
+        return NextResponse.redirect(new URL('/auth/login', request.url))
     }
+
     
     return NextResponse.next()
 

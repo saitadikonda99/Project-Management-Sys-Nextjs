@@ -35,7 +35,7 @@ const Login = () => {
                 const response = await axios.post('/api/auth/login', userData)
 
                 if(response.data.status === 200) {
-                    router.push('/Home')
+                    router.push('/student/Home')
                 } 
                 if(response.data.status === 401) {
                     toast.error('Invalid credentials')
@@ -130,20 +130,3 @@ const Login = () => {
 }
 
 export default Login
-
-
-                // <input 
-                //     type="text"
-                //     placeholder='username'
-                //     name='username'
-                //     value={userData.username}
-                //     onChange={handleChange}
-                // />
-                // <input 
-                //     type="password" 
-                //     placeholder='password'
-                //     name='password'
-                //     value={userData.password}
-                //     onChange={handleChange}
-                // />
-                // <button onClick={handleSubmit}>Login</button>

@@ -124,6 +124,13 @@ const Login = () => {
                         </div>
                     </div>
                 </div>
+
+                <div className="Login-footer">
+                    <div className="Login-footer-in">
+                        <p>Designed & Developed by <Link href="https://www.linkedin.com/in/tadikondasaimanikanta" target='_blank'>Tadikonda Sai Manikanta</Link></p>
+                    </div>
+                </div>
+
             </div>
         </div>
   )

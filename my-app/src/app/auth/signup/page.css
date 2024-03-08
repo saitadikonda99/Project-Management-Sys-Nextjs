@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.SignComponent {
+    width: 100%;
+}
+
+.SignComponent input {
+    font-size: 1rem;
+}
+
+
+.SignComponent-in {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.SignComponent-in-in {
+    width: 60%;
+    border-radius: 20px;
+    border: .1px solid rgb(230, 230, 230);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.Sign-up-one {
+    width: 100%;
+    display: flex;
+}
+
+.Sign-up-one-one {
+    width: 50%;
+    padding: 1rem;
+}
+
+.Sign-up-one-two {
+    width: 50%;
+    padding: 1rem;
+}
+
+.Sign-up-two {
+    width: 100%;
+    display: flex;
+}
+
+.Sign-up-two-one {
+    width: 50%;
+    padding: 1rem;
+}
+
+.Sign-up-two-two {
+    width: 50%;
+    padding: 1rem;
+}
+
+
+.Sign-up-three {
+    width: 100%;
+    display: flex;
+}
+
+.Sign-up-three-one {    
+    width: 20%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.Sign-up-three-two {
+    width: 20%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.Sign-up-three-three {
+    width: 60%;
+    padding: 1rem;
+}
+
+.Sign-up-four {
+    width: 100%;
+    display: flex;
+}
+
+.Sign-up-four-one {
+    width: 20%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.Sign-up-four-two {
+    width: 40%;
+    padding: 1rem;
+}
+
+.Sign-up-four-three {
+    width: 40%;
+    padding: 1rem;
+}
+
+.Sign-up-five {
+    width: 100%;
+    display: flex;
+}
+
+.Sign-up-five-one {
+    width: 70%;
+    padding: 1rem;
+}
+
+.Sign-up-five-two {
+    width: 30%;
+    padding: 1rem;
+}
+
+.Sign-up-five-two button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: white;
+}
+
+/* input box style */
+
+.SignComponent input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+
+.SignComponent-login {
+    width: 60%;
+    border: .1px solid rgb(230, 230, 230);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.SignComponent-login a {
+    text-decoration: none;
+}

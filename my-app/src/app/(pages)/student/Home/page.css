@@ -31,9 +31,124 @@
 .StudentHome {
     width: 80%;
     height: 100vh;
-    padding: 1rem;
+    background-color: rgb(247, 247, 247);
 }
 
 .StudentHome-in {
     width: 100%;
 }
+
+
+.S-home-one {
+    width: 100%;
+}
+
+.S-home-one-in {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+}
+
+.S-h-o-one {
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.S-h-o-one input {
+    width: 60%;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: black;
+    font-size: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.S-h-o-two {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.S-h-o-two p {
+    font-weight: 400;
+}
+
+.S-h-o-two img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.Notification-icon {
+    font-size: 1.5rem;
+}
+
+.S-home-two {
+    width: 100%;
+    padding: 2rem 0rem;
+}
+
+.S-home-two-in {
+    width: 90%;
+    margin: auto;
+}
+
+.S-home-stats {
+    width: 100%;
+    display: flex;
+}
+
+.S-home-stats-one {
+    width: 60%;
+}
+
+.S-home-stats-one-p p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: .5rem 0rem;
+}
+
+.S-home-stats-one-graph {
+    width: 100%;
+}
+
+.S-home-stats-one-graph-in {
+    width: 100%;
+    border: 2px solid red;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.S-home-Stat-one {
+    border: 2px solid black;
+    height: 20vh;
+    width: 40%;
+}
+
+.S-home-st-profile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.S-home-st-profile img {
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.S-home-stats-two {
+    width: 40%;
+}
+

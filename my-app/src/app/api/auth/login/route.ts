@@ -71,7 +71,7 @@ export const POST = async (req:NextRequest, res:NextResponse) => {
                 role: roles[0].role
             }, 
             process.env.ACCESS_TOKEN_SECRET as string,
-            { expiresIn: '30s',  algorithm: 'HS256'  },
+            { expiresIn: '15m',  algorithm: 'HS256'  },
          );
 
          // refresh token
@@ -83,7 +83,7 @@ export const POST = async (req:NextRequest, res:NextResponse) => {
                 role: roles[0].role
             },
             process.env.REFRESH_TOKEN_SECRET as string,
-            { expiresIn: '30s', algorithm: 'HS256' },
+            { expiresIn: '15m', algorithm: 'HS256' },
         )
 
         // save the refresh token into the database of the users table 
@@ -99,6 +99,7 @@ export const POST = async (req:NextRequest, res:NextResponse) => {
             sameSite: 'lax',
             secure: false,
             httpOnly: false,
+            maxAge: 15 * 60 * 1000,
         })
 
         return NextResponse.json(

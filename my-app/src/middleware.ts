@@ -23,17 +23,14 @@ export async function middleware(request: NextRequest) {
     const roles: any = decodedToken?.payload
 
     const isValid = await verifyJWT()
-
-    if(path === '/') {
-        return NextResponse.rewrite(new URL('/auth/login', request.url))
-    }
     
+     
     if(path === '/auth/login' && JWT) {
         if(roles.role === 'Admin') {
             return NextResponse.redirect(new URL('/Admin', request.url))
         }
         if(roles.role === 'Student') {
-            return NextResponse.redirect(new URL('/Home', request.url))
+            return NextResponse.redirect(new URL('/student/Home', request.url))
         }
     }
 
@@ -46,6 +43,7 @@ export async function middleware(request: NextRequest) {
     }
 
     if(!isPublic && !JWT) {
+        console.log(3)
         return NextResponse.redirect(new URL('/auth/login', request.url))
     }
 
@@ -55,13 +53,12 @@ export async function middleware(request: NextRequest) {
         return NextResponse.redirect(new URL('/auth/login', request.url))
     } 
 
-    
+
     // private routes for only students
     if(path.startsWith('/student') && (isValid === false || roles?.role != 'Student')) {
         return NextResponse.redirect(new URL('/auth/login', request.url))
     }
 
-    
     return NextResponse.next()
 
 }
@@ -70,7 +67,7 @@ export async function middleware(request: NextRequest) {
 export const config = {
     matcher: [
         '/',
-        '/Home',
+        '/student/:path*',
         '/auth/login',
         '/Admin/:path*'
     ],

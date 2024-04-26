@@ -1,4 +1,4 @@
-# COLLEGE ERP
+#  Project Management System
 
 College ERP using MERN Stack
 
